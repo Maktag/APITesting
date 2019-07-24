@@ -1,0 +1,5 @@
+API's Id,Method,Route,Payload,Header,Expected Status Code,Session Provider,Message
+API_001,POST,/login,"{""userName"": ""me@me.com"", ""password"": ""123456""}","{""app"": ""notdef""}",200,Yes,Post API with valid details.
+API_002,GET,/xyz,"{""cdf[]"": ""['val']""}","{""app"": ""notdef"", ""session"": """"}",200,,Get API with valid details.
+API_003,PUT,/abc/def,"{""password"": ""abcdefg"", ""prefix"": """", ""firstName"": ""me"", ""lastName"": ""you""}","{""app"": ""notdef"", ""session"": """"}",200,,Update API.
+API_004,DELETE,/user,uid,"{""app"": ""notdef"", ""session"": """"}",200,,Delete user API.
